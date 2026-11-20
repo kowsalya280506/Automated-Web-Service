@@ -11,7 +11,7 @@ const notificationRoutes = require("./routes/notificationRoutes");
 const app = express();
 
 // Define PORT here
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.MONGO_URI || 5000;
 
 app.use(cors());
 app.use(express.json());
