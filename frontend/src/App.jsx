@@ -39,7 +39,8 @@ import {
 } from "recharts";
 
 import "./App.css";
-const API_URL = "https://automated-web-service-qbx6.onrender.com";
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL || "https://automated-web-service-qbx6.onrender.com";
 function App() {
   const [services, setServices] = useState([]);
   const [history, setHistory] = useState([]);
