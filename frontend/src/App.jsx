@@ -40,7 +40,7 @@ import {
 
 import "./App.css";
 const API_BASE_URL =
-  import.meta.env.VITE_API_URL || "https://automated-web-service-qbx6.onrender.com";
+  import.meta.env.VITE_API_URL || "https://automated-web-service-qbx6.onrender.com/api";
 function App() {
   const [services, setServices] = useState([]);
   const [history, setHistory] = useState([]);
