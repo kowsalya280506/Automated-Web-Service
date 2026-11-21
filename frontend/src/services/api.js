@@ -2,7 +2,10 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://automated-web-service-qbx6.onrender.com"
+  baseURL: (
+    import.meta.env.VITE_API_URL ||
+    "https://automated-web-service-qbx6.onrender.com/api"
+  ).replace(/\/+$/, "")
 });
 
 export const getNotifications = async () => {
